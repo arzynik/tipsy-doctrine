@@ -7,12 +7,7 @@ use Doctrine\ORM\EntityManager;
 
 class Db extends \Tipsy\Db {
 
-	public function __construct($config = null) {
-		if ($config['_tipsy']) {
-			return;
-		}
-		$this->connect($config);
-	}
+	protected $_entityManager;
 
 	public function connect($args = null) {
 		if (!$args) {
@@ -61,7 +56,7 @@ class Db extends \Tipsy\Db {
 			$args['driverOptions'] = $options;
 		}
 
-		$config = Setup::createAnnotationMetadataConfiguration([__DIR__.'/../model'], true);
+		$config = Setup::createAnnotationMetadataConfiguration([__DIR__.'/../../../../'.$this->tipsy()->config()['doctrine']['model']], true);
 
 		$this->entityManager(EntityManager::create($args, $config));
 		$this->db($this->entityManager()->getConnection());
@@ -93,12 +88,5 @@ class Db extends \Tipsy\Db {
 			$this->_entityManager = $em;
 		}
 		return $this->_entityManager;
-	}
-
-	public function fields($table, $fields = null) {
-		if ($table && $fields) {
-			$this->_fields[$table] = $fields;
-		}
-		return $this->_fields[$table];
 	}
 }
