@@ -35,8 +35,17 @@ Usage is similar to using `Tipsy\Resource`.
       name => 'test'
     ]);
   });
+  ```
 
 See [Tipsy Doctrine Example](https://github.com/arzynik/tipsy-example-doctrine) for a more detailed example.
+
+You can also access the Doctrine DB and entityManager objects using any of the following:
+```php
+Tipsy\Tipsy::db()->db();
+Tipsy\Tipsy::db()->entityManager();
+$Db;
+$Db->entityManager();
+```
 
 
 #### Info
