@@ -1,0 +1,35 @@
+{
+	"name": "arzynik/tipsy-doctrine",
+	"description": "An doctrine extension for Tipsy",
+	"license": "MIT",
+	"keywords": [
+		"php",
+		"doctrine",
+		"framework",
+		"extension",
+		"plugin"
+	],
+	"authors": [
+		{
+			"name": "Devin Smith",
+			"email": "devin@tipsy.la",
+			"homepage": "http://devin.la",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"arzynik/tipsy": "dev-master",
+		"doctrine/orm": "^2.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"Tipsy\\Doctrine\\": "src/"
+		},
+		"files": [
+			"src/Run.php"
+		]
+	},
+	"archive": {
+		"exclude": ["/tests", "/.travis.yml", "/.gitignore"]
+	}
+}
