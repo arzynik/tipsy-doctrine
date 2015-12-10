@@ -37,7 +37,7 @@ Usage is similar to using `Tipsy\Resource`.
   });
   ```
 
-See [Tipsy Doctrine Example](https://github.com/arzynik/tipsy-example-doctrine) for a more detailed example.
+See [Tipsy Doctrine Example](https://github.com/tipsyphp/tipsy-example-doctrine) for a more detailed example.
 
 You can also access the Doctrine DB and entityManager objects using any of the following:
 ```php
@@ -49,6 +49,6 @@ $Db->entityManager();
 
 
 #### Info
-See [Tipsy Documentation](https://github.com/arzynik/tipsy/wiki) for more information on Tipsy.
+See [Tipsy Documentation](https://github.com/tipsyphp/tipsy/wiki) for more information on Tipsy.
 
 See [Getting Started](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/getting-started.html) for more info on Doctrine.
