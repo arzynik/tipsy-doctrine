@@ -4,59 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a244d18a905cac3f386424c4e3972ad0",
-    "content-hash": "89ae6e81018dc8355441e5308252ba5d",
+    "hash": "3f0ebfcde5dc85c22ce8ae52d5c611fb",
+    "content-hash": "c8393c18e8f1815b324ce4cbc48d4659",
     "packages": [
-        {
-            "name": "arzynik/tipsy",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/arzynik/tipsy.git",
-                "reference": "4c38b3c116aa243b4261533e4d5007a8f4be74ef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/arzynik/tipsy/zipball/4c38b3c116aa243b4261533e4d5007a8f4be74ef",
-                "reference": "4c38b3c116aa243b4261533e4d5007a8f4be74ef",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "satooshi/php-coveralls": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Tipsy\\": "src/"
-                },
-                "files": [
-                    "src/Tipsy.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Devin Smith",
-                    "email": "devin@tipsy.la",
-                    "homepage": "http://devin.la",
-                    "role": "Developer"
-                }
-            ],
-            "description": "An MVW PHP framework",
-            "keywords": [
-                "framework",
-                "mvc",
-                "mvw",
-                "php"
-            ],
-            "time": "2015-12-09 16:45:28"
-        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.7",
@@ -772,13 +722,63 @@
                 "shim"
             ],
             "time": "2015-11-04 20:28:58"
+        },
+        {
+            "name": "tipsyphp/tipsy",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tipsyphp/tipsy.git",
+                "reference": "43f0aa5f311a67dd1305e79616220a9e88b1b7ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tipsyphp/tipsy/zipball/43f0aa5f311a67dd1305e79616220a9e88b1b7ff",
+                "reference": "43f0aa5f311a67dd1305e79616220a9e88b1b7ff",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tipsy\\": "src/"
+                },
+                "files": [
+                    "src/Tipsy.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Devin Smith",
+                    "email": "devin@tipsy.la",
+                    "homepage": "http://devin.la",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An MVW PHP framework",
+            "keywords": [
+                "framework",
+                "mvc",
+                "mvw",
+                "php"
+            ],
+            "time": "2015-12-10 18:36:21"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "arzynik/tipsy": 20
+        "tipsyphp/tipsy": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

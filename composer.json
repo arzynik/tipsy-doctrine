@@ -18,7 +18,7 @@
 		}
 	],
 	"require": {
-		"arzynik/tipsy": "dev-master",
+		"tipsyphp/tipsy": "dev-master",
 		"doctrine/orm": "^2.5"
 	},
 	"autoload": {
